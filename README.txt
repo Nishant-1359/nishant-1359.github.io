@@ -1,14 +1,10 @@
-# Portfolio Update 2
+Portfolio Update 3
 
-Files included:
-- script.js
+Files:
+- hero.html
+- hero.css
 
 Steps:
-1. Copy `script.js` into the root of your portfolio repository.
-2. Add this line just before `</body>` in `index.html` if it is not already present:
-
-<script src="script.js"></script>
-
-Features:
-- Active navigation highlighting
-- Scroll reveal animations
+1. Replace your current hero section in index.html with hero.html.
+2. Append hero.css to the bottom of style.css.
+3. Commit and push.

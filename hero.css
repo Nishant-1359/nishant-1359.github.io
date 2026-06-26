@@ -1,0 +1,19 @@
+
+.hero-content{max-width:850px;margin:auto;text-align:center;padding:100px 20px}
+.hero-tag{letter-spacing:2px;text-transform:uppercase;color:#60a5fa;font-size:.9rem}
+.hero h1{font-size:clamp(3rem,6vw,4.8rem);margin:20px 0}
+.hero-desc{max-width:720px;margin:auto;color:#94a3b8;font-size:1.1rem;line-height:1.8}
+.accent{
+background:linear-gradient(90deg,#3b82f6,#06b6d4);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+.hero-buttons{margin-top:35px;display:flex;justify-content:center;gap:18px;flex-wrap:wrap}
+.btn-outline{
+background:transparent;
+border:2px solid #3b82f6;
+color:#e5e7eb;
+}
+.btn:hover{transform:translateY(-3px);transition:.25s}
+.reveal{opacity:0;transform:translateY(40px);transition:.7s}
+.visible{opacity:1;transform:translateY(0)}
