@@ -155,3 +155,47 @@ transform:translateY(-4px);
 background:transparent;
 border:2px solid #2563eb;
 }
+
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+margin-top:35px;
+}
+
+.project-card{
+background:#111827;
+border:1px solid rgba(255,255,255,.08);
+border-radius:16px;
+padding:24px;
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.35);
+}
+
+.project-card h3{
+margin-top:0;
+}
+
+.tech{
+display:flex;
+flex-wrap:wrap;
+gap:8px;
+margin:18px 0;
+}
+
+.tech span{
+background:#1d4ed8;
+padding:6px 12px;
+border-radius:20px;
+font-size:.85rem;
+}
+
+.links{
+margin-top:18px;
+}
+
