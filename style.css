@@ -440,3 +440,28 @@ align-items:center;
 
 }
 
+/* ===== Education & Certification Improvements ===== */
+
+.cert-card a{
+    color:#60a5fa;
+    text-decoration:none;
+    transition:0.3s ease;
+    font-weight:600;
+}
+
+.cert-card a:hover{
+    color:#ffffff;
+}
+
+.cert-card{
+    text-align:center;
+}
+
+.edu-card{
+    line-height:1.7;
+}
+
+.cert-card p{
+    margin:6px 0;
+    color:#cbd5e1;
+}
