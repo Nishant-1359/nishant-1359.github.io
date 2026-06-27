@@ -16,7 +16,8 @@ if(e.isIntersecting)e.target.classList.add('show');
 });
 },{threshold:.15});
 
-document.querySelectorAll('section,.project-card,.skill-card,.edu-card,.cert-card,.timeline-content,.github-card').forEach(el=>{
+document.querySelectorAll(
+'.project-card,.skill-card,.edu-card,.cert-card,.timeline-content,.github-card').forEach(el=>{
 el.classList.add('hidden');
 observer.observe(el);
 });
