@@ -15,14 +15,7 @@ body{
  color:var(--text);
 }
 header{
- position:sticky;top:0;
- backdrop-filter:blur(10px);
- background:rgba(11,17,32,.8);
- padding:16px 8%;
- display:flex;
- justify-content:space-between;
- align-items:center;
- z-index:100;
+    position:relative;
 }
 nav a{
  color:var(--text);
@@ -78,6 +71,7 @@ footer{
 
 .hero{
 min-height:100vh;
+padding-top:100px;
 display:flex;
 flex-direction:column;
 justify-content:flex-start;
@@ -86,10 +80,17 @@ padding:30px 8%;
 }
 
 .navbar{
-display:flex;
-justify-content:space-between;
-align-items:center;
-margin-bottom:80px;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 8%;
+    background:rgba(15,23,42,.95);
+    backdrop-filter:blur(12px);
+    z-index:1000;
 }
 
 .logo{
