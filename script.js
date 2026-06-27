@@ -1,37 +1,22 @@
+const btn=document.createElement('button');
+btn.innerHTML='↑';
+btn.id='scrollTop';
+document.body.appendChild(btn);
 
-// Portfolio Update 2
-document.addEventListener("DOMContentLoaded",()=>{
-
-// Active navigation highlighting
-const sections=document.querySelectorAll("section");
-const links=document.querySelectorAll("nav a");
-
-window.addEventListener("scroll",()=>{
- let current="";
- sections.forEach(sec=>{
-   const top=sec.offsetTop-120;
-   if(scrollY>=top){current=sec.id;}
- });
- links.forEach(link=>{
-   link.classList.remove("active");
-   if(link.getAttribute("href")==="#"+current){
-      link.classList.add("active");
-   }
- });
+window.addEventListener('scroll',()=>{
+btn.style.display=window.scrollY>400?'block':'none';
 });
+
+btn.onclick=()=>window.scrollTo({top:0,behavior:'smooth'});
 
 // Reveal animation
 const observer=new IntersectionObserver(entries=>{
- entries.forEach(entry=>{
-   if(entry.isIntersecting){
-      entry.target.classList.add("visible");
-   }
- });
-},{threshold:0.15});
-
-document.querySelectorAll("section,.card").forEach(el=>{
-  el.classList.add("reveal");
-  observer.observe(el);
+entries.forEach(e=>{
+if(e.isIntersecting)e.target.classList.add('show');
 });
+},{threshold:.15});
 
+document.querySelectorAll('section,.project-card,.skill-card,.edu-card,.cert-card,.timeline-content,.github-card').forEach(el=>{
+el.classList.add('hidden');
+observer.observe(el);
 });
