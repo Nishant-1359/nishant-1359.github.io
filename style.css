@@ -350,4 +350,8 @@ border-radius:18px;
 font-size:.82rem;
 }
 
+.github-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;margin-top:30px}
+.github-card{background:#111827;padding:24px;border-radius:16px;border:1px solid rgba(255,255,255,.08);text-align:center}
+.github-card img{width:100%;max-width:520px;border-radius:12px}
+.github-note{text-align:center;margin-top:24px;color:#94a3b8}
 
