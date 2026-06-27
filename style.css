@@ -355,3 +355,29 @@ font-size:.82rem;
 .github-card img{width:100%;max-width:520px;border-radius:12px}
 .github-note{text-align:center;margin-top:24px;color:#94a3b8}
 
+.footer{
+padding:50px 20px;
+text-align:center;
+background:#0f172a;
+border-top:1px solid rgba(255,255,255,.08);
+}
+
+.footer-links{
+margin-top:18px;
+display:flex;
+justify-content:center;
+gap:22px;
+flex-wrap:wrap;
+}
+
+.footer-links a{
+text-decoration:none;
+color:#60a5fa;
+transition:.3s;
+}
+
+.footer-links a:hover{
+color:white;
+}
+
+
