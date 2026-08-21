@@ -1,3 +1,4 @@
+/* POINTER 12.5 — LIGHT THEME */
 /* =========================================================
    NISHANT KHANDELWAL — PORTFOLIO
 ========================================================= */
@@ -11,25 +12,25 @@
 }
 
 :root {
-    --bg: #0b1120;
-    --bg-deep: #080d19;
-    --surface: #0f172a;
-    --surface-2: #111c31;
-    --surface-hover: #142039;
+    --bg: #f8fafc;
+    --bg-deep: #f1f5f9;
+    --surface: #ffffff;
+    --surface-2: #f8fafc;
+    --surface-hover: #f1f5f9;
 
-    --text: #f1f5f9;
-    --text-soft: #cbd5e1;
-    --muted: #94a3b8;
-    --muted-dark: #64748b;
+    --text: #0f172a;
+    --text-soft: #334155;
+    --muted: #64748b;
+    --muted-dark: #94a3b8;
 
-    --accent: #60a5fa;
-    --accent-light: #93c5fd;
-    --accent-bg: rgba(96, 165, 250, 0.08);
-    --accent-bg-strong: rgba(96, 165, 250, 0.13);
-    --accent-border: rgba(96, 165, 250, 0.22);
+    --accent: #2563eb;
+    --accent-light: #1d4ed8;
+    --accent-bg: rgba(37, 99, 235, 0.07);
+    --accent-bg-strong: rgba(37, 99, 235, 0.12);
+    --accent-border: rgba(37, 99, 235, 0.22);
 
-    --border: rgba(148, 163, 184, 0.12);
-    --border-strong: rgba(148, 163, 184, 0.20);
+    --border: rgba(15, 23, 42, 0.10);
+    --border-strong: rgba(15, 23, 42, 0.18);
 
     --max-width: 1120px;
     --section-space: 115px;
@@ -37,7 +38,7 @@
     --radius: 18px;
     --radius-small: 12px;
 
-    --shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+    --shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
     --transition: 220ms ease;
 }
 
@@ -63,7 +64,7 @@ body {
 
 body::selection {
     background: var(--accent);
-    color: #08111f;
+    color: #ffffff;
 }
 
 img {
@@ -136,7 +137,7 @@ section {
     border: 1px solid var(--accent);
     border-radius: 10px;
     background: var(--accent);
-    color: #08111f;
+    color: #ffffff;
     font-size: .86rem;
     font-weight: 750;
     line-height: 1;
@@ -206,7 +207,7 @@ section {
 
 .logo:hover {
     background: var(--accent);
-    color: #08111f;
+    color: #ffffff;
     transform: translateY(-1px);
 }
 
@@ -330,7 +331,7 @@ section {
 
 .hero h1 {
     max-width: 900px;
-    color: #f8fafc;
+    color: #0f172a;
     font-size: clamp(3.1rem, 7vw, 6.3rem);
     font-weight: 850;
     letter-spacing: -.055em;
@@ -677,7 +678,7 @@ section {
     border: 1px solid var(--accent-border);
     border-radius: 999px;
     background: var(--accent-bg);
-    color: #bfdbfe;
+    color: #1d4ed8;
     font-size: .72rem;
 }
 
@@ -839,7 +840,7 @@ section {
     border: 1px solid var(--accent-border);
     border-radius: 999px;
     background: var(--accent-bg);
-    color: #bfdbfe;
+    color: #1d4ed8;
     font-size: .72rem;
 }
 
@@ -1309,7 +1310,7 @@ section {
 
 .error-page h1 {
     margin: 10px 0 15px;
-    color: #f8fafc;
+    color: #0f172a;
     font-size: clamp(2.5rem,7vw,5rem);
     line-height: 1.05;
 }
@@ -1408,7 +1409,7 @@ section {
         padding: 80px 35px 40px;
 
         border-left: 1px solid var(--border);
-        background: rgba(8,13,25,.98);
+        background: rgba(255,255,255,.98);
         backdrop-filter: blur(16px);
 
         transition: right .3s ease;
