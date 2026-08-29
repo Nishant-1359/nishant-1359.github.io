@@ -1999,3 +1999,145 @@ body {
 :focus-visible {
     outline-color: #2563eb;
 }
+
+/* =========================================================
+   PROFILE PHOTO — HERO SECTION
+========================================================= */
+
+.hero-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 300px;
+    align-items: center;
+    gap: 64px;
+}
+
+.hero-text {
+    min-width: 0;
+}
+
+.hero-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-frame {
+    position: relative;
+    width: 270px;
+    height: 270px;
+    padding: 7px;
+
+    border: 1px solid #bfdbfe;
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 18px 45px rgba(15, 23, 42, 0.12),
+        0 0 0 10px rgba(37, 99, 235, 0.045);
+}
+
+.profile-image {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    /* Slightly higher crop so your face is centered */
+    object-position: center 22%;
+
+    border: 1px solid #dbeafe;
+}
+
+.profile-caption {
+    margin-top: 16px;
+
+    color: #64748b;
+
+    font-size: 0.72rem;
+    font-weight: 650;
+    letter-spacing: 0.08em;
+
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Small blue branding accent */
+.profile-frame::after {
+    content: "";
+
+    position: absolute;
+
+    right: -8px;
+    bottom: 25px;
+
+    width: 15px;
+    height: 15px;
+
+    border: 3px solid #f8fafc;
+    border-radius: 50%;
+
+    background: #2563eb;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    .hero-layout {
+        grid-template-columns: minmax(0, 1fr) 235px;
+        gap: 38px;
+    }
+
+    .profile-frame {
+        width: 215px;
+        height: 215px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 768px) {
+
+    .hero-layout {
+        grid-template-columns: 1fr;
+        gap: 34px;
+    }
+
+    .hero-profile {
+        order: -1;
+    }
+
+    .profile-frame {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .profile-frame {
+        width: 175px;
+        height: 175px;
+    }
+
+    .profile-caption {
+        font-size: 0.64rem;
+    }
+}
